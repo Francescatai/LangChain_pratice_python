@@ -12,7 +12,7 @@ Use LangChain, GPT and Deep Lake to work with code base: https://python.langchai
 """
 
 # We need to set up keys for external services and install necessary python libraries
-!python3 -m pip install --upgrade langchain deeplake openai ticktoken
+!python3 -m pip install --upgrade langchain deeplake openai tiktoken
 
 import os
 from getpass import getpass
@@ -60,7 +60,6 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 embeddings = OpenAIEmbeddings(disallowed_special=())
 embeddings
 
-!pip install tiktoken
 from langchain.vectorstores import DeepLake
 import tiktoken
 
